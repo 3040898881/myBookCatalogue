@@ -84,6 +84,9 @@
 	☆4.8 environments（运行环境）☆106
 		★4.8.1 transactionManager（事务管理器）★107
 		★4.8.2 environment（数据源环境）★109
+			◇1. UNPOOLED◇110
+			◇2. POOLED◇110
+			◇3. JNDI◇110
 	☆4.9 environments（运行环境）☆112
 		★4.9.1 使用系统默认的databaseIdProvider★112
 		★4.9.2 不使用系统规则★115
