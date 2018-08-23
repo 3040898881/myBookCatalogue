@@ -1,0 +1,244 @@
+2018/06/06 看到222页
+【目录】5
+【第1章 JavaEE应用】9，看到
+	☆1.1.1 Java EE应用的分层模型☆10
+	☆1.1.2 Java EE应用的组件☆11
+【第2章 Spring MVC简介】16，看到
+	☆2.3 开发第一个Spring MVC应用☆19
+		★2.3.1 Spring的下载和安装★20
+		★2.3.2 Spring MVC的DispatcherServlet★20
+		★2.3.3 基于Controller接口的控制器★21
+			◇示例：第一个Spring MVC应用◇22
+				◆1.增加Spring的支持◆22
+				◆2.配置前端控制器DispatcherServelt◆22
+				◆3.配置Spring MVC的Controller◆23
+				◆4.Controller类的实现◆23
+				◆5.View页面◆24
+				◆6.测试应用◆25
+			◇示例：基于注解的处理器◇25
+				◆1.Controller类的实现◆25
+				◆2.修改Spring MVC的配置文件◆26
+	☆2.4 详解DispatcherServlet☆27
+	☆2.5 Spring MVC执行的流程☆30
+		★2.5.1 Spring MVC应用的开发步骤★30
+		★2.5.2 Spring MVC执行的流程★31
+	☆2.6 本章小结☆32
+【第3章 Spring MVC常用注解】33，看到63
+	☆3.1 @Controller注解☆34
+		★示例：@Controller注解的使用★34
+	☆3.2 @RequestMapping注解☆36
+		★3.2.1 @RequestMapping注解★36
+			§表3.1 @RequestMapping注解支持的属性§36
+			◇1.value属性◇37
+			◇2.method属性◇37
+			◇3.consumes属性◇37
+			◇4.produces属性◇37
+			◇5.params属性◇38
+			◇6.headers属性◇38
+		★3.2.2 请求处理方法可出现的参数类型★38
+		★3.2.3 请求处理方法可返回的类型★38
+		★3.2.4 Model和ModelAndView★39
+			◇1.Model和ModelMap◇39
+			◇2.ModelAndView◇41
+	☆3.3 参数绑定注解☆41
+		★3.3.1 @RequestParam注解★41
+			§@RequestMapping注解和@RequestParam注解的使用§42
+		★3.3.2 @PathVariable注解★46
+		★3.3.3 @RequestHeader注解★46
+		★3.3.4 @CookieValue注解★47
+			§示例：@PathVariable、@RequestHeader和@CookieValue注解的使用§47
+		★3.3.5 @SessionAttributes注解★49
+		★3.3.6 @ModelAttribute注解★50
+			☆1. 测试@ModelAttribute(value="")注释返回具体类的方法☆54
+			☆2. 测试@ModelAttribute注释void返回值的方法☆54
+			☆3. 测试@ModelAttribute注释返回具体类的方法☆54
+			☆4. 测试@ModelAttribute和@RequestMapping同时注释一个方法☆55
+			☆5. 测试@ModelAttribute注释一个方法的参数☆56
+	☆3.4 信息转换☆
+		★3.4.1 HttpMessageConverter<T>接口★57
+		★3.4.2 转换JSON数据★59
+			§示例：自定义HttpMessageConverter接收JSON格式数据§63
+			§示例：返回JSON格式的数据§65
+			§示例：自定义HttpMessageConverter返回JSON格式数据§66
+		★3.4.3 转换XML数据★67
+			§示例：接收XML格式的数据§67
+			§示例：返回XML格式的数据§69
+	☆3.5 本章小结☆71
+【第4章 Spring MVC标签库】72
+	☆4.1 表单标签库☆73
+		§表4.1 表单标签库中的所有标签§73
+		★4.1.1 form标签★73
+		★4.1.2 input标签★74
+		★4.1.3 password标签★76
+		★4.1.4 hidden标签★77
+		★4.1.5 textarea标签★77
+		★4.1.6 checkbox标签★78
+			◇1.绑定boolean数据◇78
+			◇2.绑定列表数据◇78
+		★4.1.7 checkboxes标签★79
+			§示例：checkboxes标签的使用§80
+		★4.1.8 radiobutton标签★84
+			§示例：radiobutton标签的使用§84
+		★4.1.9 radiobuttons标签★85
+		★4.1.10 select标签★87
+		★4.1.11 option标签★87
+		★4.1.12 options标签★87
+		★4.1.13 errors标签★92
+【第5章 Spring MVC的国际化】95
+	☆5.1 Spring MVC国际化的相关知识☆96
+		★5.1.1 messageSource★96
+		★5.1.2 localeResolver★97
+		★5.1.3 message标签★97
+	☆5.2 AcceptHeaderLocaleResolver☆97
+【第6章 Spring MVC的数据转换、格式化和数据校验】105
+	☆6.1 数据绑定流程☆106
+	☆6.2 数据转换☆106
+		★6.2.1 ConversionService★107
+			§示例：使用ConversionService转换数据§108
+		★6.2.2 Spring支持的转换器★107
+			§示例：使用@InitBinder添加自定义编辑器转换数据§111
+		★6.2.3 多种转换器的优先顺序★112
+	☆6.3 数据格式化☆112
+		§示例：使用AnnotationFormatterFactory<A extends Annotation>格式化数据§116
+			□1.DateTimeFormat
+			□2.NumberFormat
+		★6.4 数据校验★119
+			◇6.4.1 Spring的Validation校验框架◇119
+				§示例：测试Spring的Validation校验§120
+			◇6.4.2 JSR 303校验◇122
+				§表6.1 JSR 303注解§122
+				§表6.2 HibernateValidator注解§123
+				§示例：测试JSR 303校验§123
+		★6.5 本章小结★128
+【第7章 Spring MVC的文件上传和下载】129
+	☆7.1 文件上传☆130
+		§示例：使用对象接收上传文件§132
+	☆7.2 文件下载☆133
+		§示例：Spring MVC的文件下载§133
+	☆7.3 拦截器☆134
+		★7.3.1 拦截器★135
+		§示例：拦截器实现用户权限验证§135
+	☆7.4 本章小结☆139
+【第8章 MyBatis简介】140
+	☆8.1 ORM和MyBatis☆141
+		★8.1.1 对象/关系数据库映射（ORM）★141
+		★8.1.2 基本映射方式★142
+		★8.1.3 流行的ORM框架简介★143
+		★8.1.4 MyBatis概述★143
+	☆8.2 MyBatis入门☆144
+		★8.2.1 MyBatis下载和安装★144
+		★8.2.2 MyBatis的数据库操作★145
+	☆8.3 本章小结☆150
+【第9章 MyBatis基本用法】151，看到
+	☆9.1 MyBatis的体系结构☆152
+		★9.1.1 SqlSessionFactory★152
+		★9.1.2 SqlSession★152
+	☆9.2 深入MyBatis的配置文件☆154
+		★9.2.1 MyBatis的配置文件结构★155
+		★9.2.3 settings设置★156
+		★9.2.4 typeAliases类型命名★158
+		★9.2.5 typeHandlers类型处理器★159
+		★9.2.6 objectFactory对象工厂★160
+		★9.2.7 environments配置环境★160
+		★9.2.8 mapper映射器★162
+	☆9.3 深入Mapper XML映射文件☆163
+		★9.3.1 select★163
+		★9.3.2 insert、update、delete★165
+		★9.3.3 sql★167
+		★9.3.4 参数（Parameters）★167
+			§示例：测试select、insert、update和delete操作§168
+		★9.3.5 ResultMaps★171
+【第10章 MyBatis的关联映射和动态SQL】178
+	☆10.1 MyBatis的关联映射☆179
+		★10.1.1 一对一★179
+		★10.1.2 一对多★182
+		★10.1.3 多对多★187
+			§示例：ManyToManyTest§187
+	☆10.2 动态SQL☆193
+		§DynamicSQLTest§193
+		★在MyBatis中，#{id}表达式获取参数的方式★194
+		★10.2.1 if★194
+		★10.2.2 choose(when、otherwise)★196
+		★10.2.3 where★198
+		★10.2.4 set★199
+		★10.2.5 foreach★200
+		★10.2.6 bind★201
+	☆10.3 本章小结☆203
+【第11章 MyBatis的事务管理和缓存机制】203
+	☆11.1 MyBatis的事务管理☆204
+		★11.1.1 事务的概念★204
+		★11.1.2 Transaction接口★204
+			§MyBatis事务管理的两种形式§205
+		★11.1.3 事务的配置创建和使用★205
+			◇1.事务的配置◇205
+			◇2.事务工厂的创建◇205
+			◇3.事务工厂TransactionFactory◇206
+			◇4.JdbcTransaction◇206
+			◇5.JdbcTransaction◇206
+	☆11.2 MyBatis的缓存机制☆209
+		★11.2.1 一级缓存（SqlSession级别）★209
+		§示例：OneLevelCacheTest§209
+		★11.2.2 二级缓存（mapper级别）★212
+		§示例：TwoLevelCacheTest§212
+	☆11.3 本章小结☆215
+【第12章 MyBatis的注解配置】216
+	☆12.1 常用Annotation注解☆217
+	☆12.2 Annotation注解的使用☆218
+		§示例：测试select、insert、update和delete操作§218
+	☆示例：AOneToManyTest☆223
+	☆示例：AManyToManyTest☆224
+	☆示例：ADynamicSQLTest☆226
+	☆12.3 本章小结☆232
+【第13章 Spring整合MyBatis3】233，看到
+	☆13.1 开发环境搭建☆234
+	☆13.2 准备所需的jar包☆234
+	☆13.3 准备数据库资源☆235
+	☆13.4 完成配置文件☆235
+	☆13.5 持久层功能实现☆238
+	☆13.6 服务层功能实现☆238
+	☆13.7 控制层功能实现☆240
+	☆13.8 jsp页面☆241
+	☆13.9 测试Spring4整合MyBatis3☆242
+	☆13.10 本章小结☆243
+【第14章 人事管理系统】244，看到
+	☆14.1 项目简介及系统结构☆245
+		★14.1.1 系统功能介绍★245　
+		★14.1.2 相关技术介绍★246
+			◇1.传统表现层技术JSP◇246
+			◇2.MVC框架◇246
+			◇3.Spring框架的作用◇246
+			◇4.MyBatis的作用◇246
+		★14.1.3 系统结构★247　
+		★14.1.4 系统的功能模块★247　
+	☆14.2 数据表和持久化类☆247
+		★14.2.1 设计数据库表★248　
+		★14.2.2 设计持久化实体★249
+		★14.2.3 创建持久化实体类★250
+	☆14.3 实现DAO持久层☆256
+		★14.3.1 公共常量类★257
+		★14.3.2 定义Dao接口★257
+		★14.3.3 部署DAO层★271
+	☆14.4 实现Service持久层☆272
+		★14.4.1 业务逻辑组件的设计★272
+		★14.4.2 实现业务逻辑组件★272
+		★14.4.3 事务管理★287
+		★14.4.4 部署业务逻辑组件★287
+	☆14.5 实现Web层☆288
+		★14.5.1 控制器的处理顺序★288
+		★14.5.2 用户管理★291
+		★14.5.3 部门管理★295
+		★14.5.5 员工管理★300
+		★14.5.6 公告管理★304
+		★14.5.7 下载中心★307
+	☆14.6 本章小结☆311
+【附录A EL表达式和JSTL标签库】312，看到
+	☆A.1 EL表达式语法☆313
+		★A.1.1 ${expression}★313
+		★A.1.2 []和.运算符★313
+		★A.1.3 取值规则★314
+		★A.1.4 访问JavaBean★315
+	☆A.2 EL表达式的运算符☆315
+	☆A.3 EL表达式的隐式对象☆317
+	☆A.4 JSTL标签库☆323
+	☆A.5 Core标签库☆323
+		★A.5.1 <c:out>★323
