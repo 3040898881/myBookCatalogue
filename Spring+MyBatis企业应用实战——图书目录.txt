@@ -49,7 +49,7 @@
 			§示例：@PathVariable、@RequestHeader和@CookieValue注解的使用§47
 		★3.3.5 @SessionAttributes注解★49
 		★3.3.6 @ModelAttribute注解★50
-			☆1. 测试@ModelAttribute(value="")注释返回具体类的方法☆54
+			☆1. 测试@ModelAttribute(value="")注释返回具体类的方法☆51
 			☆2. 测试@ModelAttribute注释void返回值的方法☆54
 			☆3. 测试@ModelAttribute注释返回具体类的方法☆54
 			☆4. 测试@ModelAttribute和@RequestMapping同时注释一个方法☆55
